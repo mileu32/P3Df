@@ -1,4 +1,4 @@
-//P3Df v0.1.0 build 1
+//P3Df v0.1.0 build 2
 
 void sphere(float x, float y, float z, float r, color c) {
   fill(c);
@@ -10,6 +10,14 @@ void sphere(float x, float y, float z, float r) {
   noStroke();
   sphere(r);
   translate(-x, -y, -z);
+}
+
+void sphere(PVector p, float r, color c) {
+  sphere(p.x, p.y, p.z, r, c);
+}
+
+void sphere(PVector p, float r) {
+  sphere(p.x, p.y, p.z, r);
 }
 
 void text(String m, float x, float y, float z, color c) {

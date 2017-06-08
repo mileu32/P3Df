@@ -1,4 +1,8 @@
-//P3Df v0.1.0 build 2
+//P3Df v0.1.0 build 3
+
+void camera(PVector target, PVector camera, float upX, float upY, float upZ){
+  camera(target.x, target.y, target.z, camera.x, camera.y, camera.z, upX, upY, upZ);
+}
 
 void sphere(float x, float y, float z, float r, color c) {
   fill(c);
